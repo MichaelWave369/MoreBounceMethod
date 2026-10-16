@@ -4,7 +4,7 @@
 
 An open-source human practice for honesty, accountability, understanding, interconnection, contribution, and curiosity. This is a new, evolving framework, not a scientifically validated treatment or universal recipe for wellbeing.
 
-**Website target:** https://michaelwave369.github.io/MoreBounceMethod/
+**Published website:** https://michaelwave369.github.io/MoreBounceMethod/
 
 ## The six principles
 
@@ -19,10 +19,21 @@ An open-source human practice for honesty, accountability, understanding, interc
 
 The method has no moral scores, mandatory positivity, penalties, leaderboards, or human rankings. It respects rest, privacy, boundaries, and individual differences. Read the [full manifesto](MANIFESTO.md).
 
+## The Foundation Principle: Build true before you build tall
+
+The six B.O.U.N.C.E. practices are also six structural supports for a shared future: **honesty** (bedrock), **accountability** (reinforcement), **understanding** (alignment), **interconnection** (framework), **creation** (construction), and **evolution** (maintenance).
+
+A sound foundation can flex, reveal cracks, and be repaired. We are not trying to build the tallest monument to ourselves, but to give future generations, including people we will never meet, something true they can question and improve.
+
+**The Future Bounce:** “A good deed doesn't end where it lands. It begins where it bounces.”
+
+This analogy must remain open to inspection. No principle is beyond critique, and no person is ranked by it. [Read the full Foundation Principle](MANIFESTO.md#the-foundation-principle-build-true-before-you-build-tall).
+
 ## React website
 
 - Responsive React + Vite single-page website
 - Six pillar cards with practical reflection questions
+- Interactive Foundation Principle section, with six supports, inspection prompts, and the Future Bounce
 - Gentle Daily Bounce reflection, with optional **local-only** save
 - Plain text reflection export and a clear button
 - Seven days of starter invitations, with no streaks or pressure
