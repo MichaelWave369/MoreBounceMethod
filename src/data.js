@@ -23,3 +23,40 @@ export const starterDays=[
 {name:'Change your mind',focus:'Evolve With Evidence',action:'Find a belief worth checking. Notice evidence supporting and challenging it.',reflection:'What evidence surprised me?'},
 {name:'Pass it on',focus:'All six, your way',action:'Choose one practice to keep. Invite someone to adapt it, not copy you.',reflection:'What kind of ripple do I want to leave?'}
 ];
+
+/**
+ * The Foundation Principle is an analogy and a practice, not a claim that
+ * six traits can quantify a person's worth. The prompts are invitations.
+ */
+export const foundationSupports = [
+  {
+    letter: 'B', title: 'Honesty', role: 'The bedrock',
+    meaning: 'Truth gives the rest of the structure something trustworthy to stand on. Uncertainty belongs in the blueprint.',
+    check: 'Is there something I am treating as certain that I should check?'
+  },
+  {
+    letter: 'O', title: 'Accountability', role: 'The reinforcement',
+    meaning: 'Responsibility and repair keep us from hiding damage beneath a fresh coat of paint.',
+    check: 'What can I own, repair, or ask for help with?'
+  },
+  {
+    letter: 'U', title: 'Understanding', role: 'The alignment',
+    meaning: 'Listening and empathy help us build beside one another instead of pushing each other out.',
+    check: 'Whose experience have I not understood well enough?'
+  },
+  {
+    letter: 'N', title: 'Interconnection', role: 'The framework',
+    meaning: 'People, communities, and living systems are connected. Our choices redistribute weight and support.',
+    check: 'Who or what bears the consequences of this decision?'
+  },
+  {
+    letter: 'C', title: 'Creation', role: 'The construction',
+    meaning: 'We build, protect, restore, and share things others can use. Small improvements count.',
+    check: 'Will this leave something better for the people who come next?'
+  },
+  {
+    letter: 'E', title: 'Evolution', role: 'The maintenance',
+    meaning: 'A sound structure is inspected, tested, updated, and repaired. Our principles must be open to correction too.',
+    check: 'What evidence would tell me this practice needs to change?'
+  }
+]
