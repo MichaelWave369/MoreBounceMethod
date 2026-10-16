@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { pillars, dailyQuestions, starterDays } from './data.js'
+import { pillars, dailyQuestions, starterDays, foundationSupports } from './data.js'
 
 const STORAGE_KEY = 'more-bounce-method:daily:v1'
 const today = () => {
@@ -22,7 +22,7 @@ function Mark() {
 function Header() {
   return <header className="header">
     <a href="#home" className="brand" aria-label="More Bounce Method home"><Mark/><span>MORE <strong>BOUNCE</strong><small>METHOD™</small></span></a>
-    <nav aria-label="Main navigation"><a href="#method">The method</a><a href="#daily">Daily Bounce</a><a href="#seven-days">7-day start</a><a href="#manifesto">Manifesto</a></nav>
+    <nav aria-label="Main navigation"><a href="#method">The method</a><a href="#foundation">Foundation</a><a href="#daily">Daily Bounce</a><a href="#seven-days">7-day start</a><a href="#manifesto">Manifesto</a></nav>
     <a className="github-link" href="https://github.com/MichaelWave369/MoreBounceMethod" target="_blank" rel="noopener noreferrer">Open source ↗</a>
   </header>
 }
@@ -53,6 +53,44 @@ function Method() {
     </article>)}</div>
   </section>
 }
+
+function Foundation() {
+  return <section id="foundation" className="section foundation-section" aria-labelledby="foundation-title">
+    <div className="foundation-lead">
+      <div className="foundation-copy">
+        <p className="kicker">02 / THE FOUNDATION PRINCIPLE</p>
+        <h2 id="foundation-title">Build true <span className="gradient">before you build tall.</span></h2>
+        <p>Humanity is adding floor after floor to an extraordinary future. But a beautiful building with an untested foundation can still fail. The same is true of our choices, our communities, and the systems we create.</p>
+        <blockquote>Strong foundations aren't the ones that never move. They're the ones that can <strong>adapt, reveal cracks, and be repaired.</strong></blockquote>
+        <p className="foundation-small">Not a demand for perfect people. An invitation to keep our principles load-bearing, honest, and open to inspection.</p>
+      </div>
+      <div className="foundation-diagram" role="img" aria-label="Six different supports standing together on a shared foundation under an open, growing roof">
+        <span className="diagram-starlight" aria-hidden="true">✧</span>
+        <div className="diagram-roof" aria-hidden="true"><span>THE FUTURE</span></div>
+        <div className="diagram-beam" aria-hidden="true"/>
+        <div className="diagram-pillars" aria-hidden="true">{foundationSupports.map(s=><span key={s.letter}>{s.letter}</span>)}</div>
+        <div className="diagram-foundation" aria-hidden="true">BUILD TRUE · BOUNCE FORWARD</div>
+        <div className="diagram-ground" aria-hidden="true"/>
+      </div>
+    </div>
+    <div className="foundation-inspection">
+      <p className="kicker">WHAT HOLDS THE STRUCTURE?</p>
+      <h3>Six supports. One shared responsibility.</h3>
+      <p className="foundation-hint">Explore each support and the question that helps us inspect it.</p>
+      <div className="support-grid">{foundationSupports.map(s=><article className="support-card" key={s.letter}>
+        <div className="support-heading"><span className="support-letter">{s.letter}</span><div><p>{s.role}</p><h4>{s.title}</h4></div></div>
+        <p>{s.meaning}</p>
+        <details className="support-question"><summary>Inspect this support <span aria-hidden="true">+</span></summary><p>{s.check}</p></details>
+      </article>)}</div>
+    </div>
+    <div className="foundation-future">
+      <div className="foundation-future-symbol" aria-hidden="true">↗</div>
+      <div><p className="kicker">THE FUTURE BOUNCE</p><h3>We're not building a monument to ourselves.<br/>We're laying a foundation for the people we'll never meet.</h3><p>The next generation gets to build higher, change the plans, and strengthen what we leave behind. A good deed doesn't end where it lands. It begins where it bounces.</p></div>
+    </div>
+    <p className="foundation-pledge">Our rule: <strong>test the foundation, don't worship it.</strong> If a practice causes harm, listen, investigate, repair it, or replace it. Ledger Above Ego.</p>
+  </section>
+}
+
 function Daily() {
   const [entry,setEntry] = useState(readSaved)
   const [notice,setNotice] = useState('')
@@ -72,7 +110,7 @@ function Daily() {
     setTimeout(()=>URL.revokeObjectURL(url),1000);setNotice('A text copy was exported.')
   }
   return <section id="daily" className="section daily-section" aria-labelledby="daily-title">
-    <div className="daily-intro"><p className="kicker">02 / THE DAILY BOUNCE</p><h2 id="daily-title">Small actions.<br/><span className="gradient">Real ripples.</span></h2>
+    <div className="daily-intro"><p className="kicker">03 / THE DAILY BOUNCE</p><h2 id="daily-title">Small actions.<br/><span className="gradient">Real ripples.</span></h2>
       <p>Take a gentle inventory of your day. Mark a question when you've considered it, even if your answer is “not today.” There are no points, grades, or streaks.</p>
       <blockquote>✦ Progress isn't being good all the time. It's staying willing to grow.</blockquote>
       <p className="privacy-note">🔒 Nothing is transmitted. Saving is optional and stays in this browser.</p>
@@ -94,7 +132,7 @@ function SevenDays() {
   const [index,setIndex] = useState(0)
   const day=starterDays[index]
   return <section id="seven-days" className="section journey-section" aria-labelledby="journey-title">
-    <div className="section-title"><p className="kicker">03 / BEGIN ANYWHERE</p><h2 id="journey-title">A gentle <span className="gradient">7-day start.</span></h2><p>Seven invitations. Not a challenge to win. Go in order, jump around, take a month, or begin again whenever you like.</p></div>
+    <div className="section-title"><p className="kicker">04 / BEGIN ANYWHERE</p><h2 id="journey-title">A gentle <span className="gradient">7-day start.</span></h2><p>Seven invitations. Not a challenge to win. Go in order, jump around, take a month, or begin again whenever you like.</p></div>
     <div className="journey"><div className="days" role="group" aria-label="Choose a day">{starterDays.map((d,i)=><button key={d.name} type="button" className={'day'+(i===index?' chosen':'')} aria-pressed={index===i} onClick={()=>setIndex(i)}><small>DAY {String(i+1).padStart(2,'0')}</small><strong>{d.name}</strong></button>)}</div>
       <div className="day-detail" aria-live="polite"><span className="day-sun" aria-hidden="true">✺</span><p className="tiny-accent">DAY {String(index+1).padStart(2,'0')} · {day.focus}</p><h3>{day.name}.</h3><p className="action">{day.action}</p>
         <div className="reflection-prompt"><p className="tiny-accent">SOMETHING TO ASK YOURSELF</p><p>{day.reflection}</p></div>
@@ -104,7 +142,7 @@ function SevenDays() {
   </section>
 }
 function Manifesto() {
-  return <section id="manifesto" className="section manifesto" aria-labelledby="manifesto-title"><p className="kicker">04 / OUR OPEN MANIFESTO</p><h2 id="manifesto-title">Nobody owns the Bounce.<br/><span className="gradient">Everybody can add to it.</span></h2>
+  return <section id="manifesto" className="section manifesto" aria-labelledby="manifesto-title"><p className="kicker">05 / OUR OPEN MANIFESTO</p><h2 id="manifesto-title">Nobody owns the Bounce.<br/><span className="gradient">Everybody can add to it.</span></h2>
     <div className="manifesto-columns"><div><p>We reject the idea that a person's worth can be reduced to wealth, productivity, popularity, or constant happiness.</p><p>We believe honesty without cruelty, compassion without self-erasure, curiosity without arrogance, and responsibility without shame are skills worth practicing.</p></div>
       <div><p>We don't need copies of one another. We need people who feel free to be themselves while caring about the lives they touch.</p><p>We'll welcome criticism, change when evidence calls for it, protect each person's agency, and leave the door open for whoever comes next.</p></div></div>
     <blockquote>“The measure of a life is not how much of the world you acquire, but how much better the world becomes because you were here.”</blockquote>
@@ -114,7 +152,7 @@ function Manifesto() {
 export default function App() {
   return <><a className="skip" href="#main">Skip to content</a><Header/><main id="main"><Hero/>
     <div className="ribbon" aria-label="Our promises"><span>✳ REAL OVER PERFECT</span><span>✳ KINDNESS WITH BOUNDARIES</span><span>✳ SMALL RIPPLES COUNT</span><span>✳ LEDGER ABOVE EGO</span></div>
-    <Method/><aside className="reminder"><div className="reminder-icon" aria-hidden="true">✳</div><div><p className="kicker">A REMINDER, NOT A REQUIREMENT</p><h2>You don't have to shine every day to deserve the light.</h2><p>Rest is allowed. Boundaries are healthy. Asking for help counts. The More Bounce Method is never a test of whether you're a good person.</p></div></aside>
+    <Method/><Foundation/><aside className="reminder"><div className="reminder-icon" aria-hidden="true">✳</div><div><p className="kicker">A REMINDER, NOT A REQUIREMENT</p><h2>You don't have to shine every day to deserve the light.</h2><p>Rest is allowed. Boundaries are healthy. Asking for help counts. The More Bounce Method is never a test of whether you're a good person.</p></div></aside>
     <Daily/><SevenDays/><Manifesto/></main>
     <footer className="footer"><div className="brand"><Mark/><span>More Bounce Method™<small>A human practice, built in the open. © 2026 MichaelWave369.</small></span></div><div className="footer-links"><a href="#home">Back to top ↑</a><a href="https://github.com/MichaelWave369/MoreBounceMethod/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT license ↗</a><a href="https://github.com/MichaelWave369/MoreBounceMethod" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></footer>
   </>
