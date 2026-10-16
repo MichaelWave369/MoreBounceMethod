@@ -17,6 +17,35 @@ We don't need more copies of one person. We need space for everyone to be their 
 - **Create More Than You Destroy.** Give something useful, kind, beautiful, or sustaining to the world.
 - **Evolve With Evidence.** Change your mind when a better understanding arrives. Ledger above ego.
 
+## The Foundation Principle: Build true before you build tall
+
+A great building needs more than an impressive skyline. If the foundation is untrue, every new floor inherits the problem.
+
+**The same applies to the futures we are creating.** Technology, communities, and institutions may rise rapidly, but their long-term strength depends on truth, accountability, care, and a willingness to repair what fails.
+
+Our six practices become six structural supports in this analogy:
+
+| B.O.U.N.C.E. | Structural role | What it means |
+| --- | --- | --- |
+| **B · Be Real** | **Honesty is the bedrock.** | Stand on truth, admit uncertainty, and question appearances. |
+| **O · Own Your Impact** | **Accountability is the reinforcement.** | Acknowledge damage and repair it rather than hiding the cracks. |
+| **U · Understand Before Judging** | **Understanding is the alignment.** | Listen and work alongside others without surrendering healthy boundaries. |
+| **N · Nurture Interconnection** | **Interconnection is the framework.** | Consider who carries the weight of our decisions, now and later. |
+| **C · Create More Than You Destroy** | **Creation is the construction.** | Add something beneficial, protective, or restorative to the shared world. |
+| **E · Evolve With Evidence** | **Evolution is the maintenance.** | Inspect, learn, adapt, and improve when experience reveals a flaw. |
+
+**A sound foundation is not one that never moves. It is one that can withstand change, expose problems, and be repaired.** The point is not to demand flawless people or rigid ideology.
+
+### The Future Bounce
+
+We are **not building the tallest building ourselves**. We are laying a foundation that future people, including the ones we will never meet, can improve, challenge, and build upon.
+
+> A good deed doesn't end where it lands. It begins where it bounces.
+
+**Foundation inspection rule:** *Test the foundation; do not worship it.* If any principle, practice, or interpretation starts causing harm, listen to the affected people, seek evidence, and repair or replace it. **Ledger Above Ego.**
+
+This is a metaphor and a voluntary practice, not a scientific model, moral score, or claim of certainty.
+
 ## Rules we will not compromise
 
 1. No virtue points, moral leaderboard, or ranking of people.
